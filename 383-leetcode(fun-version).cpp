@@ -6,6 +6,7 @@ public:
         {
             ans = ans && count(ransomNote.begin(), ransomNote.end(), char('a' + i)) 
                          - count(magazine.begin(), magazine.end(), char('a' + i)) <= 0;
+            if(ans == false) return false;
         }
         return ans;
     }
